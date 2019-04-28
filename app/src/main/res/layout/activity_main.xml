@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android='http://schemas.android.com/apk/res/android'
+    xmlns:tools='http://schemas.android.com/tools'
+    android:layout_width='match_parent'
+    android:layout_height='match_parent'
+    android:orientation='vertical'
+    tools:context='.view.MainActivity'>
+    <include layout="@layout/support_simple_spinner_dropdown_item"/>
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <TextView
+            android:textColor="#fff"
+            android:text="Ingresar el monto a pagar"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>
+
+
+<LinearLayout
+        android:id="@+id/mpsdkRegularLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ingrear_valor"
+            android:hint="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="200px"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"/>
+
+        <Button
+            android:layout_width='match_parent'
+            android:layout_height='50dp'
+            android:layout_marginTop='25dp'
+            android:gravity='center'
+            android:background="@color/accent"
+            android:id="@+id/button_pagar"
+            android:text='Pagar'
+            />
+
+        <TextView
+            android:layout_width='match_parent'
+            android:layout_height='wrap_content'
+            android:id='@+id/mp_results'
+            android:paddingTop='50dp' />
+    </LinearLayout>
+</FrameLayout>
